@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br
+">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Kanban Board</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito:wght@200&family=VT323&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="boards">
+
+        <div class="board">
+            <h3>To do</h3>
+            <div class="dropzone">
+                <div class="card" draggable="true">
+                    <div class="status green"></div>
+                    <div class="content">Do videos</div>
+                </div>
+            </div>
+        </div>
+        <div class="board">
+            <h3>In progress</h3>
+            <div class="dropzone">
+                <div class="card" draggable="true">
+                    <div class="status blue"></div>
+                    <div class="content">Forum</div>
+                </div>
+            </div>
+        </div>
+        <div class="board">
+            <h3>Done</h3>
+            <div class="dropzone">
+                <div class="card" draggable="true">
+                    <div class="status red"></div>
+                    <div class="content">Next level Week</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="drag.js" defer></script>
+</body>
+
+</html>
